@@ -1,0 +1,10 @@
+<h2> Be a participant: </h2>
+<%= form_with model: [@event, @event.participates.build] do |form| %>
+<%= form.label :name %>
+<%= form.text_field :name %>
+<br>
+<%= form.label :email %>
+<%= form.text_field :email %>
+<br> <br>
+<%= form.submit %>
+<% end %>

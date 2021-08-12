@@ -17,3 +17,11 @@
 <%= link_to "Back", events_path %>
 <%= link_to "Edit", edit_event_path(@event.id) %>
 <%= link_to "Delete", event_path(@event.id) , method: :delete, data: {confirm: "Are you sure?"} %>
+
+<br> <br>
+
+<%= render @event.participates %>
+
+<br> <br>
+
+<%= render 'participates/form' %>

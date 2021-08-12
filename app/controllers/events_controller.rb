@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "secret", except: [:show, :index]
   def index
     @events = Event.all
   end
