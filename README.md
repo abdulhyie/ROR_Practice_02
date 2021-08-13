@@ -22,3 +22,8 @@
 * Changing migration output with: surpress_messages, say, say_with_time
 * NOTE: Create new migration to change the DB. Editing existing migrations is not a good idea.
 * Changing schema dump from schema.rb to schema.sql
+* Seeding a database with existng data
+
+# Routing:
+
+* 
